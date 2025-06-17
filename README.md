@@ -1,12 +1,52 @@
-# React + Vite
+# Job Nest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack job portal application built with React and Node.js.
 
-Currently, two official plugins are available:
+<img src="public/logo.png" width="100" alt="Job Portal Application" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- User authentication (login/signup)
+- Job listings and applications
+- Employer dashboard
+- Job seeker profile management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Setup Instructions
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Demo Accounts
+
+For testing purposes, you can use the following demo credentials:
+
+**Recruiter Account:**
+
+- Email: peterchinoko@gmail.com
+- Password: 12345678
+
+**Note:** Due to Mailtrap limitations, email verification won't work unless we have a registered domain.
+
+## Known Limitations
+
+- Email functionality is currently limited due to Mailtrap restrictions
+- Some features may be in development
+
+## Project Structure
+
+- `src/` - Frontend React application
+- `public/` - Static assets
+- `src/store/` - State management
+- `src/pages/` - Application pages
+- `src/components/` - Reusable components
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
