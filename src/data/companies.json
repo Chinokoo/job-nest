@@ -1,0 +1,42 @@
+[
+  {
+    "name": "absa",
+    "id": "01",
+    "logo": "/companies/absa.PNG"
+  },
+  {
+    "name": "bitcoin_ekasi",
+    "logo": "/companies/bitcoin_ekasi_logo.png",
+    "id": "02"
+  },
+  {
+    "name": "ikhokha",
+    "logo": "/companies/ikhokha_logo.PNG",
+    "id": "03"
+  },
+  {
+    "name": "mtn",
+    "logo": "/companies/mtn_logo.png",
+    "id": "04"
+  },
+  {
+    "name": "kaizer_chiefs",
+    "logo": "/companies/kaizer_chiefs_f.c.PNG",
+    "id": "05"
+  },
+  {
+    "name": "nandos",
+    "logo": "/companies/nandos.png",
+    "id": "06"
+  },
+  {
+    "name": "SAA",
+    "logo": "/companies/SAA.png",
+    "id": "07"
+  },
+  {
+    "name": "shoprite",
+    "logo": "/companies/shoprite.png",
+    "id": "08"
+  }
+]

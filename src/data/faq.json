@@ -1,0 +1,27 @@
+[
+  {
+    "question": "What is JobNest?",
+    "answer": "JobNest is a job portal platform connecting job seekers with employers across various industries.",
+    "id": "01"
+  },
+  {
+    "question": "How do I apply for jobs?",
+    "answer": "Create an account, browse listings, and click 'Apply' on jobs you're interested in.",
+    "id": "02"
+  },
+  {
+    "question": "Is JobNest free to use?",
+    "answer": "Yes, JobNest is completely free for job seekers.",
+    "id": "03"
+  },
+  {
+    "question": "How can companies post jobs?",
+    "answer": "Companies can register for an employer account to post job listings.",
+    "id": "04"
+  },
+  {
+    "question": "What industries does JobNest cover?",
+    "answer": "We cover all major industries including tech, finance, healthcare, and more.",
+    "id": "05"
+  }
+]
