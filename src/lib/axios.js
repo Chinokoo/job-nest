@@ -1,15 +1,13 @@
 import axios from "axios";
 
+const baseURL = import.meta.env.PROD
+  ? "https://portifolio-backend-pppp.onrender.com/api"
+  : "http://localhost:3001/api";
+
 export const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_APP_ENV === 'development' 
-    ? import.meta.env.VITE_API_BASE_URL_DEV 
-    : import.meta.env.VITE_API_BASE_URL_PROD,
+  baseURL: baseURL,
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Access-Control-Allow-Origin": import.meta.env.VITE_APP_ENV === 'development'
-      ? import.meta.env.VITE_CORS_ORIGIN_DEV
-      : import.meta.env.VITE_CORS_ORIGIN_PROD
-  }
+  },
 });
