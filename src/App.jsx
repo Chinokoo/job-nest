@@ -13,7 +13,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./App.css";
-import AppLayout from "./layouts/Applayout";
+import AppLayout from "./layouts/AppLayout";
 import LandingPage from "./pages/LandingPage";
 import OnBoardingScreen from "./pages/OnBoardingScreen";
 import JobListingsPage from "./pages/JobListingsPage";
@@ -50,7 +50,7 @@ function App() {
         // Landing page (public)
         {
           path: "/",
-          element: !user ? <LandingPage /> : <Navigate to="/onboarding" />,
+          element: user ? <Navigate to="/onboarding" /> : <LandingPage />,
         },
         // Onboarding screen (protected)
         {
