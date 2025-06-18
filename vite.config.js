@@ -8,6 +8,14 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     historyApiFallback: true,
+    proxy: {
+      '/api': {
+        target: 'https://jobnest-backendd.onrender.com',
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      }
+    }
   },
   resolve: {
     alias: {
