@@ -53,39 +53,46 @@ function App() {
           element: user ? <Navigate to="/onboarding" /> : <LandingPage />,
         },
         // Onboarding screen (protected)
+        // Landing page (public)
+        {
+          path: "/",
+          element:
+            !user || !user._id ? (
+              <LandingPage />
+            ) : (
+              <Navigate to="/onboarding" />
+            ),
+        },
+        // Onboarding screen (protected)
         {
           path: "/onboarding",
-          element: user ? <OnBoardingScreen /> : <Navigate to="/" />,
+          element:
+            user && user._id ? <OnBoardingScreen /> : <Navigate to="/" />,
         },
         // Job listings (protected)
         {
           path: "/all-jobs",
-          element: user ? <JobListingsPage /> : <Navigate to="/" />,
+          element: user && user._id ? <JobListingsPage /> : <Navigate to="/" />,
         },
         // Job details (protected)
         {
           path: "/job-details/:id",
-          element: user ? <JobDetailsPage /> : <Navigate to="/" />,
+          element: user && user._id ? <JobDetailsPage /> : <Navigate to="/" />,
         },
         // Create job (protected)
         {
           path: "/create-job",
-          element: user ? <CreateJobPage /> : <Navigate to="/" />,
+          element: user && user._id ? <CreateJobPage /> : <Navigate to="/" />,
         },
         // My jobs (protected)
         {
           path: "/my-jobs",
-          element: user ? <MyJobsPage /> : <Navigate to="/" />,
+          element: user && user._id ? <MyJobsPage /> : <Navigate to="/" />,
         },
         // Saved jobs (protected)
         {
           path: "/saved-jobs",
-          element: user ? <SavedJobsPage /> : <Navigate to="/" />,
-        },
-        // Password reset (public)
-        {
-          path: "/reset-password/:token",
-          element: <ResetPassword />,
+          element: user && user._id ? <SavedJobsPage /> : <Navigate to="/" />,
         },
       ],
     },
