@@ -20,9 +20,11 @@ const JobCard = ({ job }) => {
   const { addSavedJob, deleteSavedJob, getSavedJobs, savedJobs } =
     useSavedJobsStore();
 
+  console.log(savedJobs);
+
   // Normal toggle behavior for other pages
   const searchsavedJobs = savedJobs.some(
-    (savedJob) => savedJob.job_id._id === job._id
+    (savedJob) => savedJob?.job_id._id === job._id
   );
 
   useEffect(() => {
