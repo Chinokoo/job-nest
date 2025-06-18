@@ -9,23 +9,11 @@ export default defineConfig({
   server: {
     historyApiFallback: true,
     proxy: {
-      '/api': {
-        target: 'https://jobnest-backendd.onrender.com',
+      "/api": {
+        target: "https://jobnest-backendd.onrender.com",
         changeOrigin: true,
         secure: false,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      }
-    }
-  },
-  build: {
-    chunkSizeWarningLimit: 1000,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          react: ['react', 'react-dom', 'react-router-dom'],
-          vendor: ['axios', 'zustand'],
-          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
-        },
+        rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },
