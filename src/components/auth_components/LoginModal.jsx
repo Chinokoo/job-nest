@@ -34,8 +34,9 @@ const LoginModal = ({ setWhereModal }) => {
           Important Notice for Demo Users
         </h4>
         <p className="mb-2 text-gray-300">
-          Mailtrap Security, email verification won't. i can't send emails to
-          users unless i have a registered domain.
+          Mailtrap Security: email verification won't work to create a new
+          account. i can't send emails to users unless i have a registered
+          domain.
         </p>
         <div className="bg-black mb-3 p-3 rounded-md text-white">
           <p className="my-1 font-medium">

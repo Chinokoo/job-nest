@@ -31,7 +31,7 @@ const OnBoardingScreen = () => {
 
   return (
     <div className="flex flex-col justify-center items-center mt-32">
-      <h2 className="font-extrabold text-7xl sm:text-8xl tracking-tighter gradient gradient-title">
+      <h2 className="font-extrabold text-7xl sm:text-8xl text-center tracking-tighter gradient gradient-title">
         Are You a . . .
       </h2>
       <div className="flex md:flex-row flex-col justify-center gap-4 mt-16 px-4 md:px-40 w-full">
